@@ -45,12 +45,14 @@ body {
 .icons {
     display: flex;
     gap: 15px;
+    
 }
 
 .icon {
     cursor: pointer;
-    font-size: 20px;
+    font-size: 30px;
     transition: transform 0.2s;
+    
 }
 
 .icon:hover {
@@ -144,4 +146,26 @@ body {
 .footer-bottom {
     margin-top: 20px;
     font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .search-bar {
+        width: 80%;
+        margin: 10px 0;
+    }
+    .icons {
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .hero {
+        font-size: 28px;
+        padding: 15px;
+    }
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
 }
