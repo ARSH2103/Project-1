@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+    <link rel="stylesheet" href="productlisting.css">
+ 
+</head>
+<body>
+    <div class="container">
+        <div class="filters">
+            <h3>Filters</h3>
+            <label>Price Range</label>
+            <input type="range" min="10" max="500">
+            <label>Brand</label>
+            <select>
+                <option>All Brands</option>
+                <option>Brand A</option>
+                <option>Brand B</option>
+            </select>
+            <label>Rating</label>
+            <select>
+                <option>All Ratings</option>
+                <option>4 Stars & Up</option>
+                <option>3 Stars & Up</option>
+            </select>
+            <label>Availability</label>
+            <select>
+                <option>All</option>
+                <option>In Stock</option>
+            </select>
+        </div>
+        
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="product1.jpg" alt="Product Image">
+                <h4>Product Name</h4>
+                <p>$50</p>
+                <a href="#" class="btn">Add to Cart</a>
+                <a href="#" class="btn">Add to Wishlist</a>
+            </div>
+            <div class="product-card">
+                <img src="product2.jpg" alt="Product Image">
+                <h4>Product Name</h4>
+                <p>$40</p>
+                <a href="#" class="btn">Add to Cart</a>
+                <a href="#" class="btn">Add to Wishlist</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

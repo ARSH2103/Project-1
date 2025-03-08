@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        h2 {
+            color: #0077b6;
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .coupon {
+            display: flex;
+            gap: 10px;
+        }
+        .btn {
+            display: inline-block;
+            background: #0077b6;
+            color: white;
+            padding: 12px 20px;
+            margin-top: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background 0.3s;
+            width: 100%;
+            text-align: center;
+        }
+        .btn:hover {
+            background: #005a8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Checkout</h2>
+        
+        <div class="section">
+            <h3>Billing & Shipping Address</h3>
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your name">
+            <label>Address</label>
+            <input type="text" placeholder="Enter your address">
+            <label>City</label>
+            <input type="text" placeholder="Enter your city">
+            <label>Zip Code</label>
+            <input type="text" placeholder="Enter zip code">
+        </div>
+        
+        <div class="section">
+            <h3>Delivery Options</h3>
+            <select>
+                <option>Standard Delivery (5-7 Days)</option>
+                <option>Express Delivery (2-3 Days)</option>
+                <option>Same Day Delivery</option>
+            </select>
+        </div>
+        
+        <div class="section">
+            <h3>Payment Mode</h3>
+            <select>
+                <option>Credit/Debit Card</option>
+                <option>PayPal</option>
+                <option>Bank Transfer</option>
+                <option>Cash on Delivery</option>
+            </select>
+        </div>
+        
+        <div class="section">
+            <h3>Order Summary</h3>
+            <p>Items: $100</p>
+            <p>Shipping: $10</p>
+            <p><strong>Total: $110</strong></p>
+        </div>
+        
+        <div class="section">
+            <h3>Apply Coupon Code</h3>
+            <div class="coupon">
+                <input type="text" placeholder="Enter coupon code">
+                <button class="btn">Apply</button>
+            </div>
+        </div>
+        
+        <a href="order_confirmation.html" class="btn">Confirm Order</a>
+    </div>
+</body>
+</html>

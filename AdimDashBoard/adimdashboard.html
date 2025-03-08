@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admindashboard.css">
+    <script src="script.js" defer></script>
+ 
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Admin Panel</h2>
+        <ul>
+            <li onclick="showSection('dashboard')">Dashboard</li>
+            <li onclick="showSection('products')">Manage Products</li>
+            <li onclick="showSection('orders')">Manage Orders</li>
+            <li onclick="showSection('analytics')">Sales Analytics</li>
+            <li onclick="showSection('reports')">Reports</li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div id="dashboard" class="card">
+            <h2>Dashboard Overview</h2>
+            <p>Welcome to the admin dashboard!</p>
+        </div>
+        <div id="products" class="card" style="display:none;">
+            <h2>Manage Products</h2>
+            <button class="btn">Add Product</button>
+            <button class="btn">Update Product</button>
+            <button class="btn">Delete Product</button>
+        </div>
+        <div id="orders" class="card" style="display:none;">
+            <h2>Manage Orders</h2>
+            <p>View and process customer orders here.</p>
+        </div>
+        <div id="analytics" class="card" style="display:none;">
+            <h2>Sales Analytics</h2>
+            <p>Track sales and revenue performance.</p>
+        </div>
+        <div id="reports" class="card" style="display:none;">
+            <h2>Reports</h2>
+            <p>Generate and download reports.</p>
+        </div>
+    </div>
+    
+    <script src="admindashboard.js"></script>
+</body>
+</html>

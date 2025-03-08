@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: url('https://thumbs.wbm.im/pw/small/b22ecde70702c0cd1b2e8e73c88f564f.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.container:hover {
+    transform: scale(1.02);
+}
+.form-box {
+    display: flex;
+    flex-direction: column;
+}
+h2 {
+    margin-bottom: 20px;
+    color: #0077b6;
+    font-size: 24px;
+}
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+button {
+    width: 100%;
+    padding: 12px;
+    background: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 5px 15px rgba(0, 119, 182, 0.4);
+}
+button:hover {
+    background: #005a8d;
+    transform: translateY(-2px);
+}
+p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+a {
+    color: #0077b6;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
