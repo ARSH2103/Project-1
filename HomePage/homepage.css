@@ -148,7 +148,7 @@ body {
     font-size: 14px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .header {
         flex-direction: column;
         text-align: center;
